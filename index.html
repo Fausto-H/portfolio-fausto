@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="images/favicon.jpeg">
+    <title>Fausto | Dev</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<script>
+function copiarEmail(event) {
+    event.preventDefault();
+
+    navigator.clipboard.writeText("faustohcb@gmail.com");
+
+    alert("E-mail copiado!");
+}
+</script>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#" class="logo">Fausto | Desenvolvedor Full Stack</a>
+
+                <ul>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <h1>Welcome.</h1>
+
+                    <p>
+                        Me chamo Fausto e sou Desenvolvedor Full Stack, 
+                        com experiência na construção de sistemas web, 
+                        APIs REST e bancos de dados relacionais. 
+                        Trabalho com React, PHP e PostgreSQL para desenvolver 
+                        soluções escaláveis, eficientes e alinhadas às necessidades do negócio.
+                    </p>
+
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/image-1.jpeg" alt="Desenvolvedor">
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="curve">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path fill="#f5f5f5"
+                    d="M0,96L120,85C240,75,480,53,720,53C960,53,1200,75,1320,85L1440,96L1440,120L0,120Z">
+                </path>
+            </svg>
+        </div>
+
+        <section id="projects" class="projects">
+
+            <div class="container">
+
+                <h2>Projetos</h2>
+
+                <h4>Desenvolvidos ao longo dos estudos em programação</h4>
+
+                <div class="projects-grid">
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+                            <img src="images/projeto-1.png" alt="Projeto 1">
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>To-Do</h3>
+
+                            <p>
+                                Sistema de organização de tasks.
+                            </p>
+
+                            <a href="https://github.com/Fausto-H/to-do-list" target="_blank" rel="noopener noreferrer">
+                                <img src="images/logo-github.png" alt="Link para o projeto" class="link-icon">
+                            </a>
+
+                            <a href="https://todolistfh.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/logo-internet.png" alt="Link para o projeto" class="link-icon">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+                            <img src="images/projeto-2.png" alt="Projeto 2">
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Estoque</h3>
+
+                            <p>
+                                Controle de estoque, movimentações,
+                                dashboard e relatórios.
+                            </p>
+
+                            <a href="https://github.com/Fausto-H/vue-project" target="_blank" rel="noopener noreferrer">
+                                <img src="images/logo-github.png" alt="Link para o projeto" class="link-icon">
+                            </a>
+
+                            <a href="https://sisgestaomateriais.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/logo-internet.png" alt="Link para o projeto" class="link-icon">
+                            </a>
+                            
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+                            <img src="images/projeto-3.png" alt="Projeto 3">
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Ocorrências</h3>
+
+                            <p>
+                                Sistema completo de agendamento,
+                                pacientes e consultas.
+                            </p>
+
+                             <a href="https://github.com/Fausto-H/ocorrencias" target="_blank" rel="noopener noreferrer">
+                                <img src="images/logo-github.png" alt="Link para o projeto" class="link-icon">
+                            </a>
+
+                            <a href="https://ocorrencias-rv6s-z8b1yq4xc-fausto-h1.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/logo-internet.png" alt="Link para o projeto" class="link-icon">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+                            <img src="images/projeto-4.png" alt="Projeto 4">
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Institucional</h3>
+
+                            <p>
+                                Sistema de apresentação de serviços.
+                            </p>
+
+                            <a href="https://github.com/Fausto-H/empresa" target="_blank" rel="noopener noreferrer">
+                                <img src="images/logo-github.png" alt="Link para o projeto" class="link-icon">
+                            </a>
+
+                            <a href="https://empresafaustoh.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/logo-internet.png" alt="Link para o projeto" class="link-icon">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="about" class="about">
+
+            <div class="container">
+
+                <h2>Sobre Mim</h2>
+
+                <p>
+                    Me chamo Fausto e sou Desenvolvedor Full Stack, 
+                    formado em Análise e Desenvolvimento de Sistemas, 
+                    com experiência no desenvolvimento de aplicações web 
+                    utilizando React, Vue.js, PHP, PostgreSQL e conteinerização com Docker.
+                </p><br> 
+                <p> 
+                    Ao longo da minha trajetória profissional, participei da construção, 
+                    manutenção e evolução de sistemas corporativos voltados 
+                    para gestão operacional, controle de materiais, 
+                    registro de ocorrências e soluções para a área da saúde.
+                </p><br> 
+                <p> 
+                    Tenho experiência em todas as etapas do desenvolvimento de software, 
+                    desde a modelagem de banco de dados e criação de APIs REST até o 
+                    desenvolvimento de interfaces responsivas e intuitivas. 
+                    Busco sempre aplicar boas práticas de desenvolvimento, 
+                    código limpo e arquiteturas escaláveis, com foco em desempenho, 
+                    qualidade e experiência do usuário.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="contact" class="footer">
+
+        <div class="container">
+
+            <h2>Contato</h2>
+
+            <p>
+                Vamos conversar sobre tecnologia, projetos ou oportunidades.
+            </p>
+
+            <div class="social-links">
+
+                <a href="https://www.linkedin.com/in/fausto-henrique-1250171b4/">LinkedIn</a>
+                <a href="https://github.com/Fausto-H">GitHub</a>
+                <a href="#" onclick="copiarEmail(event)">Email</a>
+
+                    <span id="msg-copiado"></span>
+
+                    <script>
+                    function copiarEmail(event) {
+                        event.preventDefault();
+
+                        navigator.clipboard.writeText("faustohcb@gmail.com");
+
+                        const msg = document.getElementById("msg-copiado");
+
+                        msg.textContent = "✓ E-mail copiado";
+                        
+                        setTimeout(() => {
+                            msg.textContent = "";
+                        }, 2000);
+                    }
+                    </script>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
