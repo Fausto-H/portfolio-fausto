@@ -454,7 +454,30 @@ body {
 /* RESPONSIVO */
 
 @media (max-width: 900px) {
-     .hero {
+
+    /* Container com padding menor no mobile */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Header: empilha logo em cima e nav embaixo */
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .main-nav ul {
+        gap: 16px;
+        flex-wrap: wrap; /* evita itens saírem da tela */
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    /* Hero */
+    .hero {
         padding-top: 160px;
     }
 
@@ -464,70 +487,27 @@ body {
         gap: 50px;
     }
 
+    .hero h1 {
+        font-size: 3rem; /* 4rem ainda pode cortar em telas menores */
+    }
+
+    .hero p {
+        margin: auto;
+        font-size: 1rem;
+    }
+
     .hero-image img {
         max-width: 280px;
     }
 
-    .hero-content {
-
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-    .hero h1 {
-
-        font-size: 4rem;
-    }
-
-    .hero p {
-
-        margin: auto;
-    }
-
-    .hero-image img {
-
-        max-width: 320px;
-    }
-
+    /* Seções */
     .projects h2,
     .about h2 {
-
         font-size: 2.5rem;
     }
 
-    .hero h1 {
-    opacity: 0;
-    filter: blur(10px);
-
-    animation: reveal 1.2s ease forwards;
-}
-
-.hero p {
-    opacity: 0;
-    filter: blur(10px);
-
-    animation: reveal 1.2s ease forwards;
-    animation-delay: .4s;
-}
-
-@keyframes reveal {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-        filter: blur(10px);
+    /* Grid de projetos: 1 coluna no mobile */
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-        filter: blur(0);
-    }
-}
-
-#msg-copiado {
-    margin-left: 10px;
-    color: #6ea8fe;
-    font-size: 14px;
-}
 }
