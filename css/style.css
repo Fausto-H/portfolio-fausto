@@ -302,9 +302,14 @@ body {
 
 
 .link-icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     transition: transform 0.2s ease;
+    margin-right: 15px;
+}
+
+.link-icon:last-of-type {
+    margin-right: 5;
 }
 
 .link-icon:hover {
