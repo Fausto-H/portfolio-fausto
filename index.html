@@ -199,25 +199,6 @@
 
                 <h2>Sobre Mim</h2>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 <p>
                     Me chamo Fausto e sou Desenvolvedor Full Stack, 
                     formado em Análise e Desenvolvimento de Sistemas, 
@@ -257,27 +238,11 @@
 
             <div class="social-links">
 
-                <a href="https://www.linkedin.com/in/fausto-henrique-1250171b4/">LinkedIn</a>
+                                <a href="https://www.linkedin.com/in/fausto-henrique-1250171b4/">LinkedIn</a>
                 <a href="https://github.com/Fausto-H">GitHub</a>
-                <a href="#" onclick="copiarEmail(event)">Email</a>
+                <button type="button" id="btn-copiar-email" class="email-btn">Email</button>
 
                     <span id="msg-copiado"></span>
-
-                    <script>
-                    function copiarEmail(event) {
-                        event.preventDefault();
-
-                        navigator.clipboard.writeText("faustohcb@gmail.com");
-
-                        const msg = document.getElementById("msg-copiado");
-
-                        msg.textContent = "✓ E-mail copiado";
-                        
-                        setTimeout(() => {
-                            msg.textContent = "";
-                        }, 2000);
-                    }
-                    </script>
 
             </div>
 
